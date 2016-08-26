@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#004d40</color>
+    <color name="colorPrimaryDark">#004d40</color>
+    <color name="colorAccent">#9e9e9e</color>
+
+    <color name="warna_abu">#ffdbdbdb</color>
+    <color name="warna_transparan">#00000000</color>
+    <color name="warna_judul">#ff5d5d5d</color>
+    <color name="warnaTitle">#ff989898</color>
+    <color name="warna_putih">#ffffffff</color>
+    <color name="warna_putihabu">#fff2f2f2</color>
+</resources>

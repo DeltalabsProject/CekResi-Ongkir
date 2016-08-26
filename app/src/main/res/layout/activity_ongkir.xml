@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.Toolbar
+        android:background="@color/colorPrimary"
+        android:id="@+id/appbar_toolbar"
+        android:layout_width="match_parent"
+        app:navigationIcon="?homeAsUpIndicator"
+        app:navigationContentDescription="@string/abc_action_bar_up_description"
+        android:layout_height="?actionBarSize"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:contentInsetStart="@dimen/content_inset"
+        app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/layout_input"
+            android:layout_marginBottom="10dp"
+            app:cardCornerRadius="4dp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+
+                <LinearLayout android:orientation="vertical" android:background="@drawable/background_header" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:gravity="center" android:layout_marginLeft="12.0dip" android:layout_marginRight="12.0dip" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="35dp" android:baselineAligned="false">
+                        <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginRight="4.0dip" android:layout_weight="1.0">
+                            <TextView android:textSize="16sp" android:textStyle="bold" android:textAllCaps="true" android:textColor="@android:color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Input"  />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:padding="10dp"
+                    android:orientation="vertical"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+
+
+                    <LinearLayout
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:textColor="@android:color/black"
+                            android:textSize="16sp"
+                            android:text="LAYANAN"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <Spinner
+                            android:id="@+id/spinner_layanan"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_marginTop="10dp"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content">
+
+                        <android.support.design.widget.TextInputLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                            <EditText android:id="@+id/input_dari" android:inputType="textCapCharacters" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="ASAL"  />
+                        </android.support.design.widget.TextInputLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_marginTop="10dp"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content">
+
+                        <android.support.design.widget.TextInputLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                            <EditText android:id="@+id/input_ke" android:inputType="textCapCharacters" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="TUJUAN"  />
+                        </android.support.design.widget.TextInputLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_marginTop="10dp"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content">
+
+                        <android.support.design.widget.TextInputLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                            <EditText android:id="@+id/input_berat" android:inputType="textCapCharacters" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="BERAT"  />
+                        </android.support.design.widget.TextInputLayout>
+
+                    </LinearLayout>
+
+
+                    <LinearLayout android:gravity="right" android:id="@+id/layout_tombol" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <Button android:textSize="14sp" android:textStyle="bold" android:textColor="@color/colorAccent" android:id="@+id/tombol_cek" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Cek Ongkos Kirim" style="@style/Widget.AppCompat.Button.Borderless" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/layout_hasil"
+            app:cardCornerRadius="4dp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout android:orientation="vertical" android:background="@drawable/background_header" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <LinearLayout android:gravity="center" android:layout_marginLeft="12.0dip" android:layout_marginRight="12.0dip" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="35dp" android:baselineAligned="false">
+                            <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginRight="4.0dip" android:layout_weight="1.0">
+                                <TextView android:textSize="16sp" android:id="@+id/title_hasil" android:textStyle="bold" android:textAllCaps="true" android:textColor="@android:color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Hasil"  />
+                            </LinearLayout>
+                            <TextView android:textSize="16sp" android:id="@+id/tombol_cekulang" android:textStyle="bold" android:textAllCaps="true" android:textColor="@android:color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Cek Ulang"  />
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout android:id="@+id/layout_title" android:padding="10dp" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:baselineAligned="false">
+                    <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                        <TextView android:textAllCaps="true" android:textSize="@dimen/text15sp" android:textColor="@color/warna_judul" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Layanan" />
+                    </LinearLayout>
+                    <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:layout_weight="1.0">
+                        <TextView android:textAllCaps="true" android:textSize="@dimen/text15sp" android:textColor="@color/warna_judul" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Kiriman" />
+                    </LinearLayout>
+                    <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                        <TextView android:textAllCaps="true" android:textSize="@dimen/text15sp" android:textColor="@color/warna_judul" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Tarif" />
+                    </LinearLayout>
+                    <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:layout_weight="1.0">
+                        <TextView android:textAllCaps="true" android:textSize="@dimen/text15sp" android:textColor="@color/warna_judul" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Estimasi" />
+                    </LinearLayout>
+                </LinearLayout>
+                <View android:background="#ffdbdbdb" android:layout_width="fill_parent" android:layout_height="1.0dip"/>
+
+                <android.support.v7.widget.RecyclerView
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:id="@+id/recyclerOngkir"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"></android.support.v7.widget.RecyclerView>
+
+
+                <TextView
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:visibility="gone"
+                    android:textSize="16sp"
+                    android:id="@+id/error"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+    </LinearLayout>
+
+</LinearLayout>

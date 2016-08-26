@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Cek Resi</string>
+
+    <string name="app_info">Aplikasi untuk mengecek resi pengiriman barang oleh JNE, TIKI atau POS Indonesia.</string>
+    <string name="app_owner">Deltalabs Project</string>
+    <string name="app_email">deltalabsproject@gmail.com</string>
+    <string name="app_versi">Versi 1.0.0</string>
+    <string name="app_blog">www.deltacomputindo.com</string>
+    <string name="main_ad">ca-app-pub-7580328266607219/9766890880</string>
+    <string name="tracking_ad">ca-app-pub-7580328266607219/4779471282</string>
+</resources>

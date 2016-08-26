@@ -1,0 +1,21 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".activities.MainActivity">
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        android:title="Tentang Aplikasi"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_ongkir"
+        android:title="Cek Ongkos Kirim" />
+
+    <item
+        android:id="@+id/action_resi"
+        android:orderInCategory="200"
+        android:title="Resi"
+        android:icon="@drawable/ic_list_resi"
+        app:showAsAction="ifRoom"/>
+</menu>
